@@ -1,0 +1,13 @@
+Para a modelagem eu pensei em um esquema simples.
+Registrar clientes, produtos e pedidos.
+Para os clientes solicitei alguns dados bem basicos.
+Para o produto criei uma nova tabela com as categorias dos produtos e solicitei dados basicos para um produto, alem de uma descricao opcional.
+Para os pedidos, relacionei produtos com clientes, tendo a chave primaria como as chaves primarias dos dois unido com as datas de entrega e pedido.
+
+Na resolução do desafio em si, tive bastante dificuldade com a parte de gerar dados em sql, nunca havia feito algo assim, apenas em outras linguagens ou frameworks como python e django, foi um desafio conseguir executar o script de forma correta, mas ainda assim não ficou exatamente como eu queria, há muita margem para melhorias.
+
+A criação das tabelas foi algo bem simples tendo como base o diagrama que formulei.
+
+As consultas foram um pouco mais desafiadoras pois ja estava com pouquissimo tempo no relógio, mas fiz o que foi possível para retornar minimamente o que foi pedido.
+
+No mais, achei o desafio muito interessante, havia bastante tempo para estudar e testar soluções, só me apertei no tempo pois meu "pgAdmin" resolveu não funcionar mais e tive que utilizar outra maquina.
