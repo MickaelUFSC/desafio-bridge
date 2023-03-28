@@ -2,12 +2,19 @@ Para a modelagem eu pensei em um esquema simples.
 Registrar clientes, produtos e pedidos.
 Para os clientes solicitei alguns dados bem basicos.
 Para o produto criei uma nova tabela com as categorias dos produtos e solicitei dados basicos para um produto, alem de uma descricao opcional.
-Para os pedidos, relacionei produtos com clientes, tendo a chave primaria como as chaves primarias dos dois unido com as datas de entrega e pedido.
+Para os pedidos, relacionei produtos com clientes, tendo a chave primaria como a união das chaves estrangeiras com as datas.
 
 Na resolução do desafio em si, tive bastante dificuldade com a parte de gerar dados em sql, nunca havia feito algo assim, apenas em outras linguagens ou frameworks como python e django, foi um desafio conseguir executar o script de forma correta, mas ainda assim não ficou exatamente como eu queria, há muita margem para melhorias.
+
+As funções eu desonvolvi usando algumas partes aleatórias e outras partes incrementais, 
+quando era uma inserção que dependia de outra tabela, eu pegava o tamanho da tabela e sorteava um valor entre o 0 e o valor obtido, assim no caso do produto, eu sempre insiro uma categoria aleatória dentro de todas as categorias ja registradas.
+Com isso ficamos limitados a inserir uma categoria antes de um produto, pois não haveria como registrar esse produto sem categoria, o mesmo ocorre com pedido e produto/cliente.
 
 A criação das tabelas foi algo bem simples tendo como base o diagrama que formulei.
 
 As consultas foram um pouco mais desafiadoras pois ja estava com pouquissimo tempo no relógio, mas fiz o que foi possível para retornar minimamente o que foi pedido.
 
 No mais, achei o desafio muito interessante, havia bastante tempo para estudar e testar soluções, só me apertei no tempo pois meu "pgAdmin" resolveu não funcionar mais e tive que utilizar outra maquina.
+
+OBS:
+Percebi alguns erros que não pude corrigir por falta de tempo, por exemplo, os pedidos não estão funcionando corretamente como (1 pedido para n produtos) fora outros erros mais "corriqueiros"
